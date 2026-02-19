@@ -1,0 +1,134 @@
+ci:
+  - changed-files:
+      - any-glob-to-any-file:
+          - .github/workflows/**
+
+templates:
+  - changed-files:
+      - any-glob-to-any-file:
+          - .github/ISSUE_TEMPLATE/**
+          - .github/PULL_REQUEST_TEMPLATE.md
+
+profile:
+  - changed-files:
+      - any-glob-to-any-file:
+          - profile/**
+
+# JavaScript/TypeScript
+javascript:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '**/*.js'
+          - '**/*.jsx'
+          - '**/*.mjs'
+          - '**/*.cjs'
+
+typescript:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '**/*.ts'
+          - '**/*.tsx'
+          - tsconfig.json
+          - tsconfig.*.json
+
+# React
+react:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '**/*.jsx'
+          - '**/*.tsx'
+          - '**/components/**'
+          - '**/hooks/**'
+
+# Next.js specific
+nextjs:
+  - changed-files:
+      - any-glob-to-any-file:
+          - next.config.*
+          - '**/app/**'
+          - '**/pages/**'
+          - '**/public/**'
+          - middleware.*
+
+routing:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '**/app/**/page.*'
+          - '**/app/**/layout.*'
+          - '**/app/**/route.*'
+          - '**/pages/**'
+
+api:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '**/app/api/**'
+          - '**/pages/api/**'
+          - '**/api/**'
+
+# Styling
+styling:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '**/*.css'
+          - '**/*.scss'
+          - '**/*.sass'
+          - '**/*.less'
+          - 'tailwind.config.*'
+          - 'postcss.config.*'
+
+# Configuration
+config:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '*.config.*'
+          - '.*rc'
+          - '.*rc.json'
+          - '.*rc.js'
+          - '.env*'
+
+# Dependencies
+dependencies:
+  - changed-files:
+      - any-glob-to-any-file:
+          - package.json
+          - package-lock.json
+          - yarn.lock
+          - pnpm-lock.yaml
+
+# Documentation
+documentation:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '**/*.md'
+          - '**/docs/**'
+          - README.md
+          - CHANGELOG.md
+
+# Tests
+testing:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '**/*.test.*'
+          - '**/*.spec.*'
+          - '**/__tests__/**'
+          - jest.config.*
+          - vitest.config.*
+          - playwright.config.*
+          - cypress.config.*
+
+# Build/Tooling
+build:
+  - changed-files:
+      - any-glob-to-any-file:
+          - webpack.config.*
+          - vite.config.*
+          - rollup.config.*
+          - esbuild.config.*
+
+linting:
+  - changed-files:
+      - any-glob-to-any-file:
+          - .eslintrc*
+          - eslint.config.*
+          - .prettierrc*
+          - prettier.config.*
