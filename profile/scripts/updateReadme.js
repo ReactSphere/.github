@@ -5,7 +5,7 @@ const https = require('https');
 const path = require('path');
 
 const ORG = 'ReactSphere';
-const TOKEN = process.env.GITHUB_TOKEN;
+const TOKEN = process.env.PAT_TOKEN;
 const README_PATH = path.join(__dirname, '..', 'README.md');
 const TOP_N = 10;
 
@@ -48,7 +48,7 @@ async function getAllPages(apiPath) {
 
 async function main() {
   if (!TOKEN) {
-    console.error('GITHUB_TOKEN is not set');
+    console.error('PAT_TOKEN is not set');
     process.exit(1);
   }
 
