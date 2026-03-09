@@ -26,7 +26,7 @@ jobs:
       - name: Generate leaderboard
         run: node profile/scripts/updateReadme.js
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
 
       - name: Commit & push changes
         env:
