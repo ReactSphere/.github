@@ -47,6 +47,13 @@ async function getAllPages(apiPath) {
   return results;
 }
 
+function isBot(user) {
+  if (!user) return false;
+  if (user.type === 'Bot') return true;
+  if (user.login && user.login.endsWith('[bot]')) return true;
+  return false;
+}
+
 async function main() {
   if (!TOKEN) {
     console.error('GIT_PAT is not set');
@@ -63,6 +70,7 @@ async function main() {
     try {
       const contribs = await getAllPages(`/repos/${ORG}/${repo.name}/contributors`);
       for (const c of contribs) {
+        if (isBot(c)) continue;
         if (!contributors[c.login]) {
           contributors[c.login] = {
             login: c.login,
@@ -86,6 +94,7 @@ async function main() {
         if (!pr.merged_at) continue;
         const login = pr.user && pr.user.login;
         if (!login) continue;
+        if (isBot(pr.user)) continue;
         if (!contributors[login]) {
           contributors[login] = {
             login,
@@ -109,6 +118,7 @@ async function main() {
         if (issue.pull_request) continue;
         const login = issue.user && issue.user.login;
         if (!login) continue;
+        if (isBot(issue.user)) continue;
         if (!contributors[login]) {
           contributors[login] = {
             login,
