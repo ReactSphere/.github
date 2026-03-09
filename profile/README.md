@@ -58,9 +58,9 @@ Browse issues labeled **`good first issue`** across our repos to get started.
 | Rank | Avatar | Username | Total | Commits | PRs | Issues | Reviews | Docs |
 |------|--------|----------|------:|--------:|----:|------:|--------:|----:|
 | 🥇 | <img src="https://avatars.githubusercontent.com/u/191262736?v=4" width="32"/> | [@naheel0](https://github.com/naheel0) | **83** | 39 | 11 | 0 | 10 | 23 |
-| 🥈 | <img src="https://avatars.githubusercontent.com/in/1143301?v=4" width="32"/> | [@Copilot](https://github.com/Copilot) | **39** | 22 | 11 | 0 | 0 | 6 |
-| 🥉 | <img src="https://avatars.githubusercontent.com/u/225665919?v=4" width="32"/> | [@jaseel0](https://github.com/jaseel0) | **27** | 12 | 0 | 0 | 8 | 7 |
-| 4 | <img src="https://avatars.githubusercontent.com/in/15368?v=4" width="32"/> | [@github-actions[bot]](https://github.com/github-actions[bot]) | **8** | 4 | 0 | 0 | 0 | 4 |
+| 🥈 | <img src="https://avatars.githubusercontent.com/u/225665919?v=4" width="32"/> | [@jaseel0](https://github.com/jaseel0) | **27** | 12 | 0 | 0 | 8 | 7 |
+| 3 | - | - | - | - | - | - | - | - |
+| 4 | - | - | - | - | - | - | - | - |
 | 5 | - | - | - | - | - | - | - | - |
 | 6 | - | - | - | - | - | - | - | - |
 | 7 | - | - | - | - | - | - | - | - |
