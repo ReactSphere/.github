@@ -1,0 +1,16 @@
+name: Welcome
+
+on:
+  pull_request_target:
+    types: [opened]
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/first-interaction@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          pr-message: |
+            🎉 Thanks for your first contribution to ReactSphere!
+            Our maintainers will review your PR soon.
