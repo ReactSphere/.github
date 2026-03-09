@@ -51,6 +51,7 @@ Browse issues labeled **`good first issue`** across our repos to get started.
 
 # 🏆 ReactSphere Top Contributors
 
+<!-- LEADERBOARD START -->
 > Last updated: 2026-03-09  
 > Showing **Top 10 Contributors**
 
@@ -66,6 +67,7 @@ Browse issues labeled **`good first issue`** across our repos to get started.
 | 8 | - | - | - | - | - | - | - | - |
 | 9 | - | - | - | - | - | - | - | - |
 | 10 | - | - | - | - | - | - | - | - |
+<!-- LEADERBOARD END -->
 
 _Generated automatically by the leaderboard workflow._
 
