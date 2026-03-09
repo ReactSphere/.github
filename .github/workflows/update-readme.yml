@@ -1,40 +1,52 @@
 name: Update Org Leaderboard
 
 on:
-  push:
-    branches:
-      - main  # or your default branch
-  pull_request:
-    types: [opened, closed]
-  issues:
-    types: [opened, edited, closed]
-  pull_request_review:
-    types: [submitted]
-  workflow_dispatch:  # manual trigger
+  # Run daily at midnight UTC to keep leaderboard up to date
+  schedule:
+    - cron: '0 0 * * *'
+  # Allow manual trigger from the Actions tab
+  workflow_dispatch:
+
+# Grant write access so the workflow can commit and push README changes
+permissions:
+  contents: write
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '20'
 
+      - name: Install dependencies
+        run: npm install
+        working-directory: profile/scripts
+
       - name: Generate leaderboard
+        # GIT_PAT must be added as a repository secret (Settings > Secrets)
         run: node profile/scripts/updateReadme.js
         env:
-          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+          GIT_PAT: ${{ secrets.GIT_PAT }}
 
       - name: Commit & push changes
         env:
-          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+          GIT_PAT: ${{ secrets.GIT_PAT }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git remote set-url origin https://x-access-token:${PAT_TOKEN}@github.com/${{ github.repository }}.git
+          # Use GIT_PAT to authenticate push (works for both public and private repos)
+          git remote set-url origin https://x-access-token:${GIT_PAT}@github.com/${{ github.repository }}.git
           git add profile/README.md
-          git commit -m "Update leaderboard" || echo "No changes"
-          git push origin HEAD:main
+          # Only commit if there are staged changes; exit gracefully otherwise
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update leaderboard [skip ci]"
+            git push origin HEAD:${{ github.event.repository.default_branch }}
+          fi
+
