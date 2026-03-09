@@ -2,59 +2,108 @@
 
 ### *The center of gravity for modern React development.*
 
-Welcome to **ReactSphere**! Our mission is to build a collaborative ecosystem where developers of all skill levels, especially **beginners**, can master React. We focus on high-quality documentation, beginner-friendly starter kits, and curated resources to empower the next generation of web engineers.
+Welcome to **ReactSphere**! Our mission is to build a collaborative ecosystem where developers of all skill levels — especially **beginners** — can master React.
+
+We focus on **high-quality documentation, beginner-friendly starter kits, and curated resources** to empower the next generation of web engineers.
 
 ---
 
-## 📚 Curated Resources
-Your go-to knowledge hub for staying up to date with the React ecosystem.
+# 🚀 Featured Projects
 
-### 🌟 [Awesome-React](https://github.com/ReactSphere/Awesome-React)
-A master list of the best React frameworks, state management libraries, and utility hooks.  
-* **Content:** Categorized links to documentation, video courses, and UI components.  
-* **Goal:** Serve as the definitive "single source of truth" for React developers.
+### 🐣 First-React-Project
+A **"Hello World" on steroids**. Perfect for beginners learning React fundamentals.
 
----
-
-## 🚀 Featured Projects
-Core software and experiments built inside the Sphere.
-
-### 🐣 [First-React-Project](https://github.com/ReactSphere/First-React-Project)
-A "Hello World" on steroids. Perfect for beginners learning React fundamentals like Hooks, Props, and JSX.  
-* **Tech Stack:** React 18, Vite, CSS Modules  
-* **Use Case:** Teaching tool or starting point for clean, boilerplate-free apps
-
-### 🏗️ [React-UI-Boilerplate](https://github.com/ReactSphere/React-UI-Boilerplate)
-A scalable architecture for professional React applications.  
-* **Tech Stack:** TypeScript, Tailwind CSS, TanStack Query  
+**Tech Stack**
+- React 18
+- Vite
+- CSS Modules
 
 ---
 
-## 🌱 First Pull Request (First PR) Initiative
-We are a **Contributor-First** organization. Never contributed to open source before? This is your place!
+### 🏗️ React-UI-Boilerplate
+A scalable architecture for professional React applications.
 
-### 📥 [First-PR Repository](https://github.com/ReactSphere/First-PR)
-A repository dedicated to helping you make your **first contribution**.  
-* **Objective:** Learn Git workflow—Fork, Clone, Branch, Pull Request—in a safe, supportive environment.  
-* **Get Involved:** Add your name to our "Wall of Contributors" via the instructions in the `README`.
-
-> **Looking for a challenge?** Browse issues labeled `good first issue` across all our repos to start contributing to code and documentation!
+**Tech Stack**
+- TypeScript
+- Tailwind CSS
+- TanStack Query
 
 ---
 
-## 📊 Community & Stats
+# 🌱 First Pull Request Initiative
 
-Stay connected with the ReactSphere collective and track our growth:
+We are a **Contributor-First organization**.
 
-| Community | Link |
-| :--- | :--- |
-| 💬 **Discord** | [Join the Conversation](#) |
-| 🐦 **Twitter / X** | [@ReactSphere](#) |
-| 📝 **Blog** | [ReactSphere Insights](#) |
-| 🌐 **Join the Org** | [join](https://reactsphere-org.vercel.app/) |
+Never contributed to open source before? This is your place!
 
-### 📈 Organization Pulse
-![ReactSphere Stats](https://github-readme-stats.vercel.app/api/org?charts=true&username=ReactSphere&theme=react)
+### 📥 First-PR Repository
+
+Learn the GitHub workflow:
+
+1. Fork the repository  
+2. Clone it locally  
+3. Create a new branch  
+4. Submit your first Pull Request  
+
+Browse issues labeled **`good first issue`** across our repos to get started.
+
+---
+
+# 🏆 ReactSphere Top Contributors
+
+> Last updated: 2026-03-09  
+> Showing **Top 10 Contributors**
+
+| Rank | Avatar | Username | Total | Commits | PRs | Issues | Reviews | Docs |
+|------|--------|----------|------:|--------:|----:|------:|--------:|----:|
+| 🥇 | <img src="https://avatars.githubusercontent.com/u/191262736?v=4" width="32"/> | [@naheel0](https://github.com/naheel0) | **83** | 39 | 11 | 0 | 10 | 23 |
+| 🥈 | <img src="https://avatars.githubusercontent.com/in/1143301?v=4" width="32"/> | [@Copilot](https://github.com/Copilot) | **39** | 22 | 11 | 0 | 0 | 6 |
+| 🥉 | <img src="https://avatars.githubusercontent.com/u/225665919?v=4" width="32"/> | [@jaseel0](https://github.com/jaseel0) | **27** | 12 | 0 | 0 | 8 | 7 |
+| 4 | <img src="https://avatars.githubusercontent.com/in/15368?v=4" width="32"/> | [@github-actions[bot]](https://github.com/github-actions[bot]) | **8** | 4 | 0 | 0 | 0 | 4 |
+| 5 | - | - | - | - | - | - | - | - |
+| 6 | - | - | - | - | - | - | - | - |
+| 7 | - | - | - | - | - | - | - | - |
+| 8 | - | - | - | - | - | - | - | - |
+| 9 | - | - | - | - | - | - | - | - |
+| 10 | - | - | - | - | - | - | - | - |
+
+_Generated automatically by the leaderboard workflow._
+
+---
+
+# 📊 Organization Stats
+
+![Org Stats](https://github-readme-stats.vercel.app/api/org?username=ReactSphere&theme=react)
+
+---
+
+# 🌍 Community
+
+| Platform | Link |
+|---------|------|
+| 💬 Discord | Coming Soon |
+| 🐦 Twitter / X | Coming Soon |
+| 🌐 Join the Org | https://reactsphere-org.vercel.app |
+
+---
+
+# ❤️ Contributing
+
+We welcome contributions from **developers of all experience levels**.
+
+Ways to contribute:
+
+- Fix bugs
+- Improve documentation
+- Create starter templates
+- Add React learning resources
+- Help beginners
+
+Look for issues labeled **`good first issue`**.
+
+---
+
+⭐ **Star the repositories to support the project!**
 
 ---
 
