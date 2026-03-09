@@ -5,7 +5,8 @@ const https = require('https');
 const path = require('path');
 
 const ORG = 'ReactSphere';
-const TOKEN = process.env.PAT_TOKEN;
+// Use GIT_PAT secret for GitHub API authentication
+const TOKEN = process.env.GIT_PAT;
 const README_PATH = path.join(__dirname, '..', 'README.md');
 const TOP_N = 10;
 
@@ -48,7 +49,7 @@ async function getAllPages(apiPath) {
 
 async function main() {
   if (!TOKEN) {
-    console.error('PAT_TOKEN is not set');
+    console.error('GIT_PAT is not set');
     process.exit(1);
   }
 

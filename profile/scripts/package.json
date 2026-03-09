@@ -1,0 +1,13 @@
+{
+  "name": "leaderboard-scripts",
+  "version": "1.0.0",
+  "description": "Scripts for generating the ReactSphere leaderboard",
+  "main": "updateReadme.js",
+  "scripts": {
+    "update": "node updateReadme.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
